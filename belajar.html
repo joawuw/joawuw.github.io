@@ -1,0 +1,140 @@
+<!DOCTYPE html>     <!-- mendeklarasikan kepada komputer jika hendak membuat html || shortcut= ! -->
+<html lang="en">    <!--penanda memulai membuat data html,memasukan lenguage=english-->   
+<head>  <!--pembuka dari dokumen html yg ingin dibuat. Informasi dan keterangan lainnya yang berkaitan dengan dokumen ditulis pada element ini-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Belajar Html & Css</title>  <!-- untuk menambahkan judul halaman web yang akan ditampilkan di tab browser-->
+    <link rel="stylesheet" href="style.css">    <!-- untuk menghubungkan data html ini dengan data css || shortcut= link-css -->
+</head>
+<body>                   <!--disinilah konten akan ditempatkan & isi dari sebuah dokumen HTML yang akan ditampilkan pada jendela browser terdapat pada elemen ini-->
+    <nav>                <!--digunakan sebagai wadah dari sebuah link/a href. Untuk menampilkan logo & menu-menu yang akan ditampilkan pada web nantinya-->
+        <div class="wrapper"> <!--digunakan untuk menampung/membungkus menu & logo-->  
+            <div class="logo"><a href=''>ProgramBelajar</a></div>   <!-- untuk membuat text logo utama website-->
+            <div class="menu">
+                <ul>    <!--unorderlist (list yang tidak terurut & menggunakan simbol pada item outputnya)-->
+                    <li><a href="#home">HOME</a></li>           <!--membuat menu tombol home -->
+                    <li><a href="#pizza">PIZZA</a></li>         <!--membuat menu tombol pizza-->
+                    <li><a href="#donut">DONUT</a></li>         <!--membuat menu tombol donut-->
+                    <li><a href="#drink">DRINK</a></li>         <!--membuat menu tombol drink-->
+                    <li><a href="#contact">CONTACT US</a></li>  <!--membuat menu tombol contact us-->
+                    <li><a href="" class="tbl-coklat">SIGN UP</a></li>  <!--membuat menu tombol sign up-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">   <!--digunakan untuk menampung/membungkus isi dari section-section menu tombol utama-->
+        <!--untuk home-->
+        <section id="home">
+            <img src="img/sudah dihapus watermarknya.png" width="735px"/>   <!--untuk memasukan gambar internal || mode img src ini dimasukan duluan yang bertujuan agar gambar akan tampil disebelah kiri & text akan ditampilkan di sebelah kanannya-->
+            <div class="kolom">
+                <p class="deskripsi">Belajar Programing #dirumahaja</p> <!-- membuat text, berbentuk paragraf-->
+                <h2>Makan Enak, Setiap Hari</h2>    <!--membuat text, heading/judul tipe 2 (lebih kecil dari h1)-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, cupiditate.</p>   <!--membuat text, berbentuk paragraf-->
+                <p><a href="" class="tbl-pink">Pelajari Lebih Lanjut</a></p>    <!--membuat text yang dikhususkan untuk tombol menu "pelajari lebih lanjut"-->
+            </div>
+        </section>
+
+        <!--untuk pizza-->
+        <section id="pizza">
+            <div class="kolom">
+                <p class="deskripsi">you will need this</p>
+                <h2> Pizza Ternikmat Senusantara</h2>
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, beatae recusandae nihil similique nisi alias? Eligendi, tempora! Doloremque velit corporis minus, maxime tempore sapiente. Nam numquam aperiam vel voluptatibus vero?</p>
+            </div>
+            <img src="https://img.freepik.com/free-vector/sticker-template-with-pizza-isolated_1308-62307.jpg?w=900&t=st=1661319530~exp=1661320130~hmac=f0d812599ff3e09fb22f24e4239b08b0f1fb2d9fc83972cc3bf879f2bfae1f8f" width="350px"/>   
+            <!--untuk memasukan gambar secara eksternal (diambil dari luar, yaitu diambil dari web lain || nah disini mode img src nya dimasukan setelah text yang bertujuan agar text akan ditampilkan disebelah kiri & imgnya akan tampil diselah kananya)-->
+        </section>
+
+        <!--untuk donut-->
+        <!--dibuatnya 2 class donut yaitu agar bagian text heading/judul & gambar list donutnya dibuat terpisah, yang tujuan nya agar bisa diedit dicss nya secara terpisah -->
+        <section id="donut">
+            <div class="tengah">   <!--class 1 donut--> 
+                <div class="kolom">
+                <p class="deskripsi">you will need this</p>
+                <h2> DONUT</h2>
+                <p> Lorem ipsum dolor sit amet.</p>
+                </div>
+                
+            <div class="donut-list">    <!--class 2 donut-->
+                <div class="kartu-donut">
+                    <img src="https://img.freepik.com/free-psd/3d-rendering-donut-with-white-chocolate-topping_250435-1213.jpg?w=740&t=st=1661354689~exp=1661355289~hmac=a2872b9c7006bd685ae21f06ed4596240728f282d55d05d19ee063065e60d4db"/>
+                    <p>Donut Vanilla with Chocolate topping</p> <!--text digunakan setelah img, yg bertujuan agar text berada dibawah gambar &akan mengikuti gambarnya-->
+                </div>
+                <div class="kartu-donut">
+                    <img src="https://img.freepik.com/free-psd/3d-rendering-chocolate-donut_250435-1211.jpg?w=740&t=st=1661363697~exp=1661364297~hmac=eacd289a8f3b411eeef2c6c789e21dcfb72f9ce45bb3f3e17e9de11da66f852a"/>
+                    <p>Donut Chocolate</p>
+                </div>
+                <div class="kartu-donut">
+                    <img src="https://img.freepik.com/free-psd/3d-rendering-donut-with-pink-topping_250435-1212.jpg?w=740&t=st=1661363738~exp=1661364338~hmac=492d82d4ee204e1e0f9502724cfcdbe3bad7e89cef2009cd90b1e20fb1122233"/>
+                    <p>Donut pink</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <!--untuk drink-->
+        <section id="drink">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">DRINK</p>
+                    <h2>SEGAR</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="drink-list">
+                    <div class="list-minuman">
+                        <img src="https://img.freepik.com/free-vector/hand-drawn-strawberry-granita-illustration_23-2149441017.jpg?w=740&t=st=1661364050~exp=1661364650~hmac=2c52fc46cf01261a4d076115689dad40ab1240c1ef10d546997fedb774876f91"/>
+                        <p>juice strawberry</p>
+                    </div>
+                    <div class="list-minuman">
+                        <img src="https://img.freepik.com/free-vector/cute-milkshake-with-cherry-cartoon_138676-2978.jpg?w=740&t=st=1661477320~exp=1661477920~hmac=ed09efa4565fd1de5e0ace0850f6336bf828f5fc1ec0d4db6fed1ececa8cccc5"/>
+                        <p>milkshake</p>
+                    </div>
+                    <div class="list-minuman">
+                        <img src="https://img.freepik.com/free-vector/hand-drawn-delicious-cocktail-glass_23-2149443360.jpg?w=740&t=st=1661493101~exp=1661493701~hmac=1db58e6dea8a7afbcd90ed8a06d19c0d43615b95dd340f42874336046c1b50b3"/>
+                        <p>ice lemon</p>
+                    </div>
+                    <div class="list-minuman">
+                        <img src="https://img.freepik.com/free-vector/coffee-love-foam-with-beans-cartoon-icon-illustration_138676-2575.jpg?w=740&t=st=1661493256~exp=1661493856~hmac=266dff1b41c29992a057e110a9f2a6277ab18c46db6ad84dd169c01a441e8b2f"/>
+                        <p>coffe</p>
+                    </div>
+                    <div class="list-minuman">
+                        <img src="img/ice tea.jpg" width="500px"/> <!--dikarenakan default gambar yg dimasukan terlalu besar ukurannya, maka digunakan fitur width yg bertujuan agar gambar bisa disesuaikan ukurannya-->
+                        <p>ice tea</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="contact">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3>Rachmatandy</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, nihil?</p>
+                </div>
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, nihil?</p>
+                </div>
+                <div class="footer-section">
+                    <h3>contact</h3>
+                    <p>jl. villa mutiara pluit blok C7/no.11</p>
+                    <p>kode pos : 15131</p>
+                    <p>087711068836</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Sosial Media</h3>
+                    <p><b>instagram: </b> @Rachmat_andy</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2022. <b>Rachmat_andy</b> All Right Reserved.
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,264 @@
+* {              /* semua style html akan diberikan default seperti dibawah  */
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {          /* semua style pada tag body akan diberikan default seperti dibawah */
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.wrapper {      /* semua style yg menggunakan wrapper akan diberikan default seperti dibawah ini*/
+    width: 1100px;  /* mengatur lebar wrapper*/
+    margin: auto;   /* margin auto akan membuat siwrapper ini berada ditengah (center) */
+    position: relative;
+}
+
+.logo a {       /* untuk mengatur design dr logo utama*/
+    font-size: 50px;    /* ukuran font logo utama*/
+    font-weight: 800;   /* ketebalan font logo utama*/
+    float: left;        /* maka logo akan ditampilkan di sebelah paling kiri */
+    font-family: 'Courier New', Courier, monospace;
+    color: #D1512D;
+}
+
+.menu {         /* untuk mengatur posisi dari list menu utama agar berada disebalah kanan*/
+    float: right;
+}
+
+nav {
+    width: 100%;    /* memakai seluruh lebar baris bagiannya*/
+    margin: auto;   
+    display: flex;  /* untuk mengatur list tombol menu utamanya berbentuk berurutan kearah kanan */
+    line-height: 80px;  /* untuk membuat batas garis bawah ke atas dari list tombol menu utama, agar menu utama posisinya presisi  */
+    position: sticky;   /* untuk membuat bagian menu utama jika discroll kebawah maka bagian menu utamanya tidak akan hilang, melainkan akan tetap mengikuti berada dipaling atas*/
+    position: -webkit-sticky; /* Internet Explorer, Edge 15 dan browser versi yang lebih lama tidak mendukung penentuan posisi sticky. Safari membutuhkan awalan -webkit- agar berfungsi.*/
+    top: 0; /* maka dia akan menempel dibagian atas || jika tidak diinput top 0 maka fungsi sticky tidak akan berfungsi karena posisinya tidak diketahui*/
+    background: #ffffffff;
+    z-index: 1;   /* agar bagian menu yang paling atas pada tampilan webnya, jika discroll maka akan tampak sama (tidak terpotong) */
+    border-bottom: 1px solid #D1512D;   /* agar pada bagian menu paling atas, terdapat garis bawahnya */
+}
+
+nav ul {
+    list-style-type: none; /* untuk menghilangkan tanda bawaan simbol dari ul di html*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+nav ul li {
+    float: left;    /* agar tbl menu utama berurutan dari kiri kekanan */
+}
+
+nav ul li a {       /* untuk mengatur font dari menu utama*/
+    color: black;
+    font-weight: bold;
+    text-align: center; /* text akan diposisikan di tengah */
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {     /* agar jika cursor mengarah ke tbl menu utama, maka akan muncul garis bawah */
+    text-decoration: underline;
+}
+
+section {
+    margin:auto;
+    margin-top: 35px;
+    display: flex;      /* agar tiap halamannya berbentuk menyamping*/
+    margin-bottom: 50px;
+}
+
+.kolom {        /* mengatur text & kalimat ditiap class kolom*/
+    margin: 50px 50px;
+}
+
+.kolom .deskripsi {     /* hanya mengatur text kalimat di .kolom .deskripsi*/
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'sans-serif';
+    color: #42855B;
+}
+
+h2 {        /* mengatur tiap kalimat di h2*/
+    font-family: 'sans-serif';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #D1512D;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-coklat {          /* mengatur format tombol "sign up" tbl dimenu utama*/
+    background: #D1512D;    /* agar tbl sign up memiliki backround */
+    border-radius: 20px;    /* agar tombol sign up memiliki border dan ukurannya*/
+    margin-top: 20;
+    padding: 15px 20px;
+    color: #ffffffff;
+    cursor: pointer;    /* agar saat cursor menyentuh tbl sign up maka akan berubah menjadi bentuk tangan*/
+    font-weight: bold;
+}
+
+a.tbl-coklat:hover {        /* jika cursor menyentuh border tbl sign up maka akan ada perubahan warna*/
+    background: #FFB200;
+    text-decoration: none;
+}
+
+a.tbl-pink {    /* untuk mengatur format tombol "pelajari lebih lanjut" di web*/
+    background: #FFB200;
+    border-radius: 20px;
+    margin-top: 20;
+    padding: 15px 20px;
+    color: #ffffffff;
+    cursor: pointer;    
+    font-weight: bold;
+}
+
+a.tbl-pink:hover { /* jika cursor menyentuh tbl "peljari lebih lanjut" maka akan ada perubahan warna */
+    background: #D1512D;
+    text-decoration: none;
+}
+
+p {     /* untuk mengatur text kalimat (paragraf) */
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+.tengah {       /* untuk mengatur agar semua objek yg masuk div class ini akan berada ditengah*/
+    text-align: center;
+    width: 100%;
+}
+
+.donut-list {      /* untuk mengatur format pada div class ini */
+    width: 100%;
+    position: relative;
+    display: flex;                  /* akan berbentuk seperti kolom-kolom*/
+    flex-wrap: wrap;                /* agar tidak menjadi satu baris */
+}
+
+.kartu-donut {      /* untuk mengatur format pada div class ini */
+    width: 20%;
+    margin: 0 auto; /* agar berada ditengah */
+}
+
+.kartu-donut img {
+    width: 80%;
+    border-radius: 50%;             /* untuk membuat bentuknya lingkaran */
+}
+
+.kartu-donut p {
+    font-family: 'comic sans ms';
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #100720;
+}
+
+.drink-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-minuman {
+    width: 20%;
+    margin: auto;
+}
+
+.drink-list img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.list-minuman p {
+    font-family: 'comic sans ms';
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #100720;
+}
+
+#contact {      /* mengapa pakai #, karena di htmlnya bentuknya div id (bukan div class)*/
+    background: #dedede;
+    padding: 50px 0px;
+}
+
+.footer {   /* untuk mengatur format div class footer, yg dimana diperuntukan untuk bagian halaman paling bawah pada web*/
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;   /* biar ada dibagian tengah */
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #D1512D;
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    padding: 50px 0px;
+}
+
+@media screen and (max-width: 991.98px) {  /* untuk membuat tampilan layarnya agar responsive*/
+    .wrapper{
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu{
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul{
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .kartu-donut {
+        width: 50%;
+    }
+
+    .list-minuman {
+        width: 50%;
+    }
+}
